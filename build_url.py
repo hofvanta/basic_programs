@@ -6,7 +6,7 @@ def build_url(hostname, path, type, port=443, ext=".html"):
 def main():
     url = build_url("service.org", "api/v2/", "servers", port=7700, ext=".json")
     print(url)
-    url = build_url("service.org", "api/v2/", "routers")
+    url = build_url(hostname="service.org", path="api/v2/", type="routers")
     print(url)
 
 if __name__ == "__main__":
